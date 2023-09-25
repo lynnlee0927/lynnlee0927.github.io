@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Beef Stir-Fry Recipe</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+        body
+         {
+            margin-left: 45vh;
+            margin-right: 40vh;
+            /* margin-left: 30%;
+            margin-right: 20%; */
+            background-color: lightyellow;
+            font-family: 'PT Sans', sans-serif;
+        }
+
+        #Overview {
+            text-align: center; /* Optionally center-align all content within the section */
+        }
+
+        .Title{
+            text-align: left;
+        }
+
+        .centered-image {
+            display: inline-block; /* Center-align the image container */
+        }
+
+        .centered-image img {
+            max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+            max-height: 100%; /* Ensure the image doesn't exceed the height of its container */
+        }
+
+        ul.nav{
+                list-style-type: none;
+                overflow: hidden;
+                padding: 0;
+                background-color: #90b436;
+                /* make parent elements font size 0 because we a using inline block to stack our LI,
+                inline block stacks each element like a letter in a word or paragraph,
+                making the font size zero ensures no funky extra margins */
+                font-size: 0;
+        }
+        
+        .nav li {
+        display: inline-block;
+        /* 1 rem = 16px */
+        font-size: 1rem;
+        }
+
+      .nav li a {
+        /* make sure the link's cliclkable area is larger than just the text */
+        display: block;
+        text-align: center;
+        width: 100px;
+        padding: 10px;
+        /* remove underline on the link text */
+        text-decoration: none;
+        /* change the link color */
+        color: #333;
+      }
+
+      .nav li a.active {
+        background-color: #90b436;
+      }
+
+      .nav li a:hover {
+        background-color: #111;
+        color: white;
+      }
+
+      /* Positioning */
+      /* nav.fixed-nav { */
+        /* position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      } */
+
+      main {
+        border: 2px solid rgba(130, 94, 154, 0.524);
+        border-radius: 12px;
+        padding: 5px;
+        margin-top: 10px;
+        background-color: rgba(60, 190, 223, 0.385);
+      }
+
+      h4 {
+        font-weight: 700;
+      }
+
+      .Title-and-content{
+        text-align: left;
+      }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="top">Quick Beef Stir-Fry Recipe</h1>
+        <hr/>
+        <nav>
+            <ul class = "nav">
+                <li><a href="#Overview" class = "active">Overview</strong></a></li>
+                <li><a href="#Ingredients">Ingredients</a></li>
+                <li><a href="#Steps">Steps</a></li>
+                <li><a href="#Reviews">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id = "Overview">
+            <div class = "Title-and-content" style="margin-top: -20px;">
+                <h2>Overview</h2>
+            </div>
+
+            <div class = "centered-image">
+                <img src="image/Beef-Stir-Fry.jpg" alt="Food image" height="600" width="550"/>
+            </div>
+
+            <div class = "Title-and-content">
+                <h4 style="font-weight: bolder;">How to Make Beef Stir-Fry</h4>
+                <p>The most time-consuming part of making stir-fry is all the chopping. 
+                    Slicing your meat and veggies into smaller bite-sized pieces can take a little bit of time and effort, but it's worth it for the end result. 
+                    After you've chopped all your ingredients, you'll cook the beef on one side of the wok, or another large frying pan, and the veggies on the other side of the wok. 
+                    Once they're all cooked, you can mix the two sides together and add the soy sauce and sesame seeds.
+                    Some stir-fry recipes use a specific stir-fry sauce, which can be as basic as broth, soy sauce, sugar, and rice wine vinegar. 
+                    This quick stir-fry calls for only soy sauce. But you can feel free to add a stir-fry sauce or marinate your beef in one if you prefer.
+                </p>
+                <h4>What Cut of Beef Is Best For Beef Stir-Fry?</h4>
+                <p>
+                    Flank steaks are the most popular choice for making a stir-fry. 
+                    However, you can also use sirloin steak, skirt steak, Denver steak, or even beef chuck.
+                    Beef chuck steak is the most economical choice, but it does require some extra trimming. 
+                    You'll want to remove the tough tissue from the steaks before frying.
+                </p>
+                <h4>How to Cook Beef Stir-Fry</h4>
+                <p>
+                    If possible, you should use a wok to make beef stir-fry. 
+                    Woks are large and have sloping sides that let you cook the entire stir-fry in one pan, 
+                    so you can easily stir and flip the food without fear of it flying out. 
+                    They also are designed to cook foods quicker than skillets and with less oil.
+                    If you can't use a wok (or another carbon steel pan) then any skillet will work. 
+                    You may just need to cook the meat and veggies in separate batches. 
+                    When cooking, make sure you heat the pan and oil up first before adding your ingredients — 
+                    they should sizzle as soon as they hit the heat. 
+                    And always use an oil with a high smoke point, like canola or peanut oil, for the best stir-fry results.
+                </p>
+            </div>
+        </section>
+
+        <section id = "Ingredients">
+            <h2>Ingredients</h2>
+           
+            <ul>
+                <li>2 tablespoons vegetable oil</li>
+                <li>1 pound beef sirloin, cut into 2-inch strips</li>
+                <li>1 ½ cups fresh broccoli floretsl</li>
+                <li>1 red bell pepper, cut into matchsticks </li>
+                <li>2 carrots, thinly sliced</li>
+                <li>1 green onion, chopped</li>
+                <li>1 teaspoon minced garlic</li>
+                <li>2 tablespoons soy sauce</li>
+                <li>2 tablespoons sesame seeds, toasted</li>
+            </ul>
+          
+        </section>
+
+        <section id = "Steps">
+            <h2>Steps</h2>
+            <div class = "Title and content">
+                <ol>
+                    <li>Gather all ingredients.</li>
+                    <img src="image/step1.png" alt="step 1 image" height="300" width="400"/>
+                    <br/>
+                    <br/>
+                    <li>Heat vegetable oil in a large wok or skillet over medium-high heat; cook and stir beef until browned, 3 to 4 minutes.</li>
+                    <img src="image/step2.png" alt="step 2 image" height="300" width="400"/>
+                    <br/>
+                    <br/>
+                    <li>Move beef to the side of the wok and add broccoli, bell pepper, carrots, green onion, and garlic to the center of the wok. Cook and stir vegetables for 2 minutes.</li>
+                    <br/>
+                    <br/>
+                    <li>Stir beef into vegetables and season with soy sauce and sesame seeds. Continue to cook and stir until vegetables are tender, about 2 more minutes.</li>
+                    <img src="image/step4.png" alt="step 4 image" height="300" width="400"/>
+                    <br/>
+                    <br/>
+                    <li>Serve hot and enjoy!</li>
+                    <img src="image/step5.png" alt="step 5 image" height="300" width="400"/>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+        <section id = "Reviews">
+            <h2>Reviews</h2>
+            <form
+            action="create-profile.js"
+            name="user-create"
+            target="_self"
+            method="GET"
+          >
+                <fieldset>
+                    <legend>Add rating and reviews</legend>
+                    <textarea name="WhyClass" cols="50" rows="5" placeholder="please share your thoughts here..." value = "reviews"></textarea>
+                </fieldset>
+                <input type="button" value="Submit" name="submit-profile1" />
+                <br/>
+                <br/>
+                
+                <fieldset>
+                    <legend>Customer Satisfaction Surveys</legend>
+                    <p>If you have time, please take a moment to complete a brief survey on our website. 
+                        Users who complete the survey can enter their email below to receive a $5 Amazon gift voucher.</p>
+                    <label for="know">Where exactly did you first hear about us?</label>
+                    <input type="checkbox" name="know" value="Ad" /> Ad
+                    <input type="checkbox" name="know" value="Newspaper" /> Newspaper
+                    <input type="checkbox" name="know" value="TV" /> TV
+                    <input type="checkbox" name="know" value="others" /> others
+                    <br/>
+                    <label for="age">How old are you?</label>
+                    <input type="number" min="0" max="200" />
+                    <br/>
+                    <label for="score">On a scale of zero to five, how would you rate our website?</label>
+                    <input type="radio" name="score" value="Ad" /> 0
+                    <input type="radio" name="score" value="Ad" /> 1
+                    <input type="radio" name="score" value="Newspaper" /> 2
+                    <input type="radio" name="score" value="TV" /> 3
+                    <input type="radio" name="score" value="others" /> 4
+                    <input type="radio" name="score" value="others" /> 5
+                    <br/>
+                    <br/>
+                    <label>Thanks for your feedback. Please enter your email address below to claim your prize:</label>
+                    <br/>
+                    <input type="text" style="width: 300px;"/>
+                </fieldset>
+                <input type="button" value="Submit" name="submit-profile2" />
+            </form>
+        </section>
+
+    <br/>
+    <footer>
+        © Food Sharing 2023 <a href="#" target="_blank">facebook</a>
+        <a href="#">twitter</a>
+      </footer>
+</body>
+</html>
